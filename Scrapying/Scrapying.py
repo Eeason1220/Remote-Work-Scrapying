@@ -1,6 +1,4 @@
-from datetime import date,timedelta
 import json
-import numpy as np
 import requests
 from bs4 import BeautifulSoup as BS
 
@@ -51,9 +49,9 @@ def get_data(start_date, end_date):
     return result
     
 if __name__ == '__main__':
-    print('input start date (yyyy/mm//dd)')
+    print('input start date (yyyy/mm/dd)')
     start_date = input()
-    print('input end date (yyyy/mm//dd)')
+    print('input end date (yyyy/mm/dd)')
     end_date = input()
     result = get_data(start_date, end_date)
     print(result)
